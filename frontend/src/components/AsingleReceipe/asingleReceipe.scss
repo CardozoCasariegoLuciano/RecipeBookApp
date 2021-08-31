@@ -1,0 +1,194 @@
+.receip_card {
+  padding: 0px;
+  position: relative;
+  margin-bottom: 50px;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 300px;
+  min-height: 290px;
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.5) 10px 10px 20px 1px;
+
+  .receip_card-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px 15px 0px 0px;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px grey solid;
+    padding-right: 30px;
+    min-height: 50px;
+    margin-bottom: 20px;
+
+    .receip_card-header-btnSection {
+      font-size: 30px;
+      width: 30px;
+      height: 30px;
+
+      &:hover .btnSection-Hideicons {
+        opacity: 1;
+      }
+
+      &:hover .btnSection-Hideicons .editBTN {
+        transform: translateX(-35px);
+      }
+
+      &:hover .btnSection-Hideicons .deleteBTN {
+        transform: translateX(-60px);
+      }     
+
+      .menuBTN {
+        position: relative;
+        color: rgb(54, 54, 46);
+        z-index: 200;
+      }
+
+      .btnSection-Hideicons {
+        position: relative;
+        top: -40px;
+        left: -20px;
+        width: 70px;
+        opacity: 0;
+        transform: translateX(50px);
+
+        .editBTN {
+          position: relative;
+          top: 2px;
+          left: -55px;
+
+          color: rgba(126, 173, 235, 1);
+          cursor: pointer;
+          transition: all 0.3s;
+
+          background-color: rgba(255, 255, 255, 0.9);
+        }
+
+        .deleteBTN {
+          position: relative;
+          top: 2px;
+          left: -30px;
+
+          color: rgba(255, 0, 0, 1);
+          cursor: pointer;
+          transition: all 0.3s;
+
+          background-color: rgba(255, 255, 255, 0.9);
+        }
+      }
+    }
+
+    .receip_card-title {
+      margin-left: 20px;
+      word-break: break-all;
+      word-break: break-word;
+     
+    }
+  }
+  .receip_card-content {
+    padding: 0px 20px;
+    margin-top: -15px;
+
+    .receip_card-dificulty {
+      .icon {
+        font-size: 1.5rem;
+        color: rgba(0, 0, 0, 0.6);
+      }
+    }
+
+    .receip_card-time {
+      .icon {
+        font-size: 1.3rem;
+        color: rgba(0, 0, 0, 0.6);
+      }
+    }
+
+    span {
+      font-weight: bold;
+    }
+  }
+
+  .btn-verMas {
+    margin-left: 20px;
+    width: 100px;
+    text-decoration: none;
+    color: rgba(39, 36, 36, 0.596);
+    padding: 10px;
+    border: 2px solid grey;
+    cursor: pointer;
+    background-color: rgba(255, 235, 205, 0.171);
+    border-radius: 20px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 300px) {
+  .receip_card {
+    min-height: 250px;
+    .receip_card-header {
+      .receip_card-header-btnSection {
+        &:hover .btnSection-Hideicons {
+        }
+
+        .menuBTN {
+        }
+
+        .btnSection-Hideicons {
+        }
+      }
+
+      .receip_card-title {
+      }
+    }
+    .receip_card-content {
+      .receip_card-dificulty {
+        .icon {
+        }
+      }
+
+      .receip_card-time {
+        .icon {
+        }
+      }
+    }
+
+    .btn-verMas {
+    }
+  }
+}
+
+@media (min-width: 900px) {
+  .receip_card {
+    .receip_card-header {
+      .receip_card-header-btnSection {
+        &:hover .btnSection-Hideicons {
+        }
+
+        .menuBTN {
+        }
+
+        .btnSection-Hideicons {
+        }
+      }
+
+      .receip_card-title {
+      }
+    }
+    .receip_card-content {
+      .receip_card-dificulty {
+        .icon {
+        }
+      }
+
+      .receip_card-time {
+        .icon {
+        }
+      }
+    }
+
+    .btn-verMas {
+    }
+  }
+}

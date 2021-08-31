@@ -1,0 +1,111 @@
+.header_container {
+  background-color: rgba(240, 248, 255, 0.5);
+  height: 70px;
+  position: relative;
+  z-index: 30;
+  box-shadow: black 0px 0px 20px 3px;
+
+  .header-content {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logoSection {
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0px 20px;
+
+      .logo {
+        margin: 0px;       
+        font-size: 15px;
+        text-decoration: none;
+        font-weight: bold;
+        color: rgba(0, 0, 0, 0.8);
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+      .CantidadRec {
+        font-size: 11px;
+        padding: 0px;
+        margin: 0px;
+      }
+    }
+    .router-links_header {
+      text-decoration: none;
+      padding: 0px 20px;
+      color: rgba(0, 0, 0, 0.8);
+      font-size: 11px;
+      text-decoration: underline;
+    }
+  }
+}
+
+@media (min-width: 350px) {
+  .header_container {
+   
+    .header-content {
+      .logoSection {
+        
+        .logo {
+          font-size: 20px;
+        }
+        .CantidadRec {
+          font-size: 15px;
+        }
+      }
+      .router-links_header {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media (min-width: 650px) {
+  .header_container {
+    .header-content {
+      margin: auto;
+      width: 80%;
+      .logoSection {
+        .logo {
+          font-size: 25px;
+        }
+        .CantidadRec {
+          font-size: 17px;
+        }
+      }
+
+      .router-links_header {
+        font-size: 15px;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .header_container {
+    .header-content {
+      .logoSection {
+        .logo {
+          font-size: 25px;
+        }
+        .CantidadRec {
+          font-size: 18px;
+        }
+      }
+
+      .router-links_header {
+        font-size: 15px;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

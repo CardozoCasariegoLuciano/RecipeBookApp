@@ -1,0 +1,38 @@
+.glosario_container{
+    min-height: calc(100vh - (70px + 50px));
+    box-sizing: border-box;
+    width: 90%;
+    margin: auto;
+
+    .glosario_content{
+
+        .glosaryList{
+
+            .sinGlosario{
+                text-align: center;
+                margin-top: 50px;
+            }
+
+        }
+    }
+}
+
+
+@media (min-width:650px) {
+    .glosario_container{
+        
+        width: 75%;
+        
+    
+        .glosario_content{
+    
+            .glosaryList{
+                .sinGlosario{
+                    text-align: center;
+                    margin-top: 150px;
+                }
+            }
+        }
+    }
+    
+}

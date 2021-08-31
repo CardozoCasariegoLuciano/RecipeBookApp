@@ -1,0 +1,185 @@
+.glossryElement_container {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px 0px 0px 10px;
+  margin-bottom: 20px;
+  min-height: 100px;
+  width: 90%;
+  position: relative;
+
+  .glossaryElement_content {
+    padding: 10px;
+
+    .glassaryElement-title {
+      text-align: left;
+      font-size: 15px;
+    }
+    .glassaryElement-description {
+      text-align: left;
+      font-size: 12px;
+      word-wrap: break-word;
+    }
+  }
+
+  .glossryElement_btbSection {
+    width: 15%;
+    height: 100%;
+    background-color: rgba(90, 18, 32, 0.623);
+    position: absolute;    
+    top: 0px;
+    left: 100%;     
+
+    border-radius: 0px 10px 10px 0px;
+
+    &:hover .iconAnimado .barra01 {
+      background-color: rgb(255, 0, 255);
+      transform: scale(1.2) translateX(0%) translateY(0%);
+    }
+
+    &:hover .iconAnimado .barra02 {
+      background-color: rgb(0, 255, 0);
+      transform: scale(1.2) translateX(0%) translateY(0%);
+    }
+
+    &:hover .iconAnimado .barra03 {
+      background-color: rgb(255, 255, 5);
+      transform: scale(1.2) translateX(0%) translateY(0%);
+    }
+
+    &:hover .updateAndDeleteBTNs-Glossary {
+      opacity: 1;      
+      transform: translateX(-98%);
+      position: relative;
+      
+    }
+
+    .iconAnimado {
+
+      width: 100%;
+      height: 100%;      
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      
+      z-index: 1000;
+
+      .barra01 {
+        width: 10px;
+        height: 10px;
+        background-color: rgba(0, 255, 255, 0.5);
+        border-radius: 100%;
+        transition: all 0.5s;
+      }
+
+      .barra02 {
+        width: 10px;
+        height: 10px;
+        background-color: rgba(0, 255, 255, 0.7);
+        margin: 10px 0px;
+        border-radius: 100%;
+        transition: all 0.5s;
+      }
+
+      .barra03 {
+        width: 10px;
+        height: 10px;
+        background-color: rgba(0, 255, 255, 0.5);
+        border-radius: 100%;
+        transition: all 0.5s;
+      }
+    }
+    .updateAndDeleteBTNs-Glossary {      
+      width: 100%;
+      height: 100%; 
+      opacity: 0;
+      position: relative;
+      transition: all 0.3s;
+       
+      
+      background-color: rgba(90, 18, 32, 0.7);
+
+      .deleteBTN {
+        font-size: 30px;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-55%);
+        color: rgba(250, 52, 52, 1);
+      }
+
+      .updateBTN {
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 30px;
+        text-decoration: none;
+        color: #eee;
+      }
+    }
+  }
+}
+
+@media (min-width: 550px) {
+  .glossryElement_container {
+    .glossaryElement_content {
+      padding: 10px;
+
+      .glassaryElement-title {
+       
+      }
+      .glassaryElement-description {
+      }
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .glossryElement_container {
+    .glossaryElement_content {
+        padding: 10px 30px;
+      .glassaryElement-title {
+      }
+      .glassaryElement-description {
+          font-size: .9rem;
+      }
+    }
+
+    .glossryElement_btbSection {
+
+        width: 70px;
+      &:hover .iconAnimado .barra01 {
+      }
+
+      &:hover .iconAnimado .barra02 {
+      }
+
+      &:hover .iconAnimado .barra03 {
+      }
+
+      &:hover .updateAndDeleteBTNs-Glossary {          
+      }
+
+      .iconAnimado {
+        .barra01 {
+        }
+
+        .barra02 {
+        }
+
+        .barra03 {
+        }
+      }
+      .updateAndDeleteBTNs-Glossary {
+          width: 50px;
+        .deleteBTN {
+        }
+
+        .updateBTN {
+        }
+      }
+    }
+  }
+}

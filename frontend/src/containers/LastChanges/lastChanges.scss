@@ -1,0 +1,36 @@
+.lcModal {
+  width: 100%;
+  min-height: calc(100vh - (70px + 70px));
+
+  h3 {
+    padding: 0px;
+    padding-top: 10px;
+    text-align: center;
+    color: #eee;
+  }
+}
+
+.lcModal_conteiner {
+  width: 50%;
+  margin: auto;
+
+  color: #eee;
+  font-size: 0.9rem;
+}
+
+.aVercion {
+  p {
+    text-align: justify;
+
+    .title {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 0.8rem;
+      .vercion {
+        font-weight: bold;
+        margin-right: 10px;
+        text-decoration: underline;
+      }
+    }
+  }
+}

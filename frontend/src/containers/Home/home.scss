@@ -1,0 +1,14 @@
+.home_Conteiner{
+    box-sizing: border-box;
+    min-height: calc(100vh - ( 70px + 50px)); // las medidas del alto del componente Header y Fotter
+    padding: 20px;
+    width: 100%;
+}
+
+.home_content{
+    margin-top: 50px;
+}
+
+.noReceipeMsg{
+text-align: center;
+}

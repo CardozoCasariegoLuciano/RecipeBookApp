@@ -1,0 +1,27 @@
+body {
+  
+
+  margin: 0;
+  padding: 0px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background: rgb(88, 135, 195);
+  background: linear-gradient(
+    90deg,
+    rgba(88, 135, 195, 1) 0%,
+    rgba(105, 107, 238, 1) 58%,
+    rgba(102, 132, 214, 1) 100%
+  );
+}
+
+/* Soluciona el efecto visual super feo en vista para mobiles */
+html, body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+

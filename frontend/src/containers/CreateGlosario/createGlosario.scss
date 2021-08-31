@@ -1,0 +1,184 @@
+.createGlossary_container {
+  min-height: calc(100vh - (70px + 50px));
+  width: 90%;
+  margin: auto;
+  margin-top: 30px;
+
+  .createGlossary_content {
+    width: 100%;
+    margin: auto;
+    
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      h3 {
+        font-size: 1rem;
+        text-align: center;
+      }
+      input {
+        box-sizing: border-box;
+        padding: 5px;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        width: 100%;
+        padding-left: 30px;
+
+      }
+
+      textarea {
+        box-sizing: border-box;
+        margin-top: 30px;
+        padding: 5px;
+        resize: vertical;
+        border-radius: 10px;
+        outline: none;
+        border: none;
+        width: 100%;
+        min-height: 150px;
+        padding-left: 30px;
+
+        &::-webkit-resizer {
+          background: rgba(0, 174, 255, 0.4);
+          border-radius: 10px 0px 10px 0px;
+
+          height: 20px;
+          width: 20px;
+        }
+      }
+
+      .createGlossary-btn_section{
+
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+
+        .btn-createGlossary{
+          
+          width: 100%;
+          border-radius: 30px;
+          border: none;
+          padding: 10px;
+          cursor: pointer;
+          margin-bottom: 20px;
+        }
+
+        .btn-createGlossary_Atras{                 
+          
+          width: 70%;
+          border-radius: 30px;
+          border: none;
+          padding: 10px;
+          cursor: pointer;
+          background-color: rgba(165, 42, 42, 0.6);
+          color: #eee;
+          text-decoration: none;
+          text-align: center;
+          font-size: .9em;
+        }
+      }      
+    }
+  }
+}
+
+@media (min-width: 650px) {
+  .createGlossary_container {
+    width: 75%;
+    .createGlossary_content {
+      form {
+        h3 {
+            font-size: 1.5rem;
+        }
+        input {
+            width: 300px;
+            margin: auto;
+        }
+
+        textarea {
+        }
+
+        .createGlossary-btn_section{         
+  
+          .btn-createGlossary{
+            width: 80%;
+           
+          }
+  
+          .btn-createGlossary_Atras{
+            width: 50%;
+          }
+        } 
+      }
+    }
+  }
+}
+
+
+@media (min-width: 950px) {
+    .createGlossary_container {
+      width: 550px;
+      .createGlossary_content {
+        form {
+          h3 {
+          }
+          input {
+          }
+  
+          textarea {
+          }
+
+          .createGlossary-btn_section{   
+            
+            flex-direction: row;
+            justify-content: space-between;  
+  
+            .btn-createGlossary{
+              width: 50%;
+              margin-bottom: 0px;
+            }
+    
+            .btn-createGlossary_Atras{
+              width: 20%;
+            }
+          } 
+        }
+      }
+    }
+  }
+  
+
+  @media (min-width: 1450px) {
+    .createGlossary_container {
+      width: 650px;
+      .createGlossary_content {
+        form {
+          h3 {
+          }
+          input {
+          }
+  
+          textarea {
+          }
+
+          .createGlossary-btn_section{    
+            
+            
+            
+            .btn-createGlossary{
+              width: 40%;
+            }
+    
+            .btn-createGlossary_Atras{
+              width: 10%;
+            }
+          } 
+        }
+      }
+    }
+  }

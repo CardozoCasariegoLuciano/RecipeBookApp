@@ -1,0 +1,13 @@
+.receipList_container {  
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%; 
+}
+
+@media (min-width: 650px) {
+  .receipList_container {
+    width: 80%;
+    margin: auto;
+  }
+}
